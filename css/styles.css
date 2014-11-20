@@ -210,10 +210,13 @@ nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: #f9be3a; }
 .navicon { position: relative; height: 26px; }
 .indicator { position: absolute; right: 0 !important; }
 .pull { display: none; }
+#logo{width: 80px; margin-top:-9px; }
 /* ==========================================================================
 Hero
 ========================================================================== */
 .hero { background: url('../img/4.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; }
+.hero2 { background: url('../img/9.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; }
+
 .hero h1 { font-size: 40px; letter-spacing: 12px; margin: 10px; }
 .hero h1 span { color: #a1a9b0; display: inline-block; }
 .hero p { letter-spacing: 1px; }
@@ -241,6 +244,8 @@ iPhone Section
 Swag
 ========================================================================== */
 .swag { background: url('../img/oficina-amarillo-dk.png') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 50px 0; }
+.swag2 { background: url('../img/9.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 50px 0; height: 500px; }
+
 .swag h1 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
 .swag h1 span { display: block; font-size: 25px; margin-top: 20px; }
 .down-arrow-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: #F9BE3A; display: inline-block; margin: 10px auto 20px; color: #fff; font-size: 16px; line-height: 40px; text-align: center; }

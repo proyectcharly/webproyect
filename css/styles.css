@@ -175,6 +175,8 @@ a { color: #353535; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-
 a:hover, a:focus { color: #3dc9b3; text-decoration: none; }
 p { color: #8c9398; word-spacing: 1px; line-height: 25px; font-size: 14px; }
 p2 { color: #ffffff; text-shadow: 2px 2px 10px #000000; word-spacing: 1px; line-height: 25px; font-size: 18px; }
+p3 { color: #F6BA33; text-shadow: 2px 2px 10px #000000; word-spacing: 9px; line-height: 25px; font-size: 15px; padding-left: 50px; margin-top: 10px;}
+
 h2 { font-size: 15px; color: #353535; text-transform: uppercase; font-weight: bold; }
 h2::after { content: " "; border: solid 2px #f9be3a; display: block; width: 35px; margin: 25px auto; }
 .section-padding { padding: 90px 0 100px }
@@ -182,7 +184,7 @@ h2::after { content: " "; border: solid 2px #f9be3a; display: block; width: 35px
 .light-bg { background-color: #fff; }
 .dark-box { background: #f3f5f8; -webkit-box-shadow: 0px 3px 0px 0px #f0f2f4; -moz-box-shadow: 0px 3px 0px 0px #f0f2f4; box-shadow: 0px 3px 0px 0px #f0f2f4; }
 .light-box { background-color: #fff; -webkit-box-shadow: 0px 3px 0px 0px #f0f2f4; -moz-box-shadow: 0px 3px 0px 0px #f0f2f4; box-shadow: 0px 3px 0px 0px #f0f2f4; padding: 20px 0; }
-.light-box:hover, .light-box:focus { -webkit-box-shadow: 0px 3px 0px 0px #3dc9b3; -moz-box-shadow: 0px 3px 0px 0px #3dc9b3; box-shadow: 0px 3px 0px 0px #3dc9b3; }
+.light-box:hover, .light-box:focus { -webkit-box-shadow: 0px 3px 0px 0px #F9B41D; -moz-box-shadow: 0px 3px 0px 0px #F9B41D; box-shadow: 0px 3px 0px 0px #F9B41D }
 .box-hover { transition: all 500ms ease-in-out; -webkit-transition: all 500ms ease-in-out; -moz-transition: all 500ms ease-in-out; -o-transition: all 500ms ease-in-out; }
 .box-hover:hover, .box-hover:focus { transform: translate(0, -15px); -webkit-transform: translate(0, -15px); -ms-transform: translate(0, -15px); }
 .wrapper { height: 580px; }
@@ -197,7 +199,7 @@ nav ul li { color: rgba(255, 255, 255, 0.6); display: block; border-bottom: 1px 
 nav ul li:last-child { border: none; }
 nav ul li a { color: rgba(255, 255, 255, 0.6); display: block; padding: 20px; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; padding-left: 0; position: relative; }
 nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: #f9be3a; }
-#nav-toggle { position: absolute; right: 15px; top: 0; }
+#nav-toggle { position: absolute; right: 15px; top: -30px; }
 #nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after { cursor: pointer; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; -o-border-radius: 1px; height: 5px; width: 35px; background: #f9be3a; position: absolute; display: block; content: ''; }
 #nav-toggle span:before { top: -10px; }
@@ -216,6 +218,7 @@ Hero
 ========================================================================== */
 .hero { background: url('../img/4.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; }
 .hero2 { background: url('../img/9.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; }
+.hero3 { background: url('../img/possiblea1.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; }
 
 .hero h1 { font-size: 40px; letter-spacing: 12px; margin: 10px; }
 .hero h1 span { color: #a1a9b0; display: inline-block; }
@@ -245,6 +248,7 @@ Swag
 ========================================================================== */
 .swag { background: url('../img/oficina-amarillo-dk.png') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 50px 0; }
 .swag2 { background: url('../img/9.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 50px 0; height: 500px; }
+.swag3 { background: url('../img/possible2.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 50px 0; height: 500px; }
 
 .swag h1 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
 .swag h1 span { display: block; font-size: 25px; margin-top: 20px; }

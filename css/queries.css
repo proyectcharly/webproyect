@@ -1,5 +1,7 @@
 /* 320px (iPhone) */
 @media screen and (max-width:320px) {
+	p3 {  font-size: 10px !important; }
+
 }
 /* 480px (WVGA - Low End Windows Phone) */
 @media screen and (max-width:480px) {
@@ -9,11 +11,21 @@
 	.wp2, .wp4, .wp5, .light-box { margin-bottom: 30px; }
 	.legals { text-align: center; margin: 0; padding: 0; }
 	.credit { text-align: center; }
+	 #nav-toggle {
+position: absolute;
+right: 15px;
+top: -70px !important;
+}
+p3 {  font-size: 10px !important; }
+
+
 }
 /* xGA iPad */
 @media screen and (max-width:1024px) {
 	.wp3 { background-position: 50px 0; }
 	.swag { background-attachment: scroll; }
+	.swag2 { background-attachment: scroll; }
+	.swag3 { background-attachment: scroll; }
 	.subscribe { background-attachment: scroll; }
 }
 /* 1200px (Small Desktop, Netbook) */

@@ -76,6 +76,9 @@ small { font-size: 75%; }
 sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
+p3 {
+	color: #F9BE3A !important;
+}
 /* ==========================================================================
 Lists
 ========================================================================== */
@@ -107,8 +110,41 @@ figure { margin: 0; }
 Forms
 ========================================================================== */
 /* * Corrects margin displayed oddly in IE 6/7. */
- 
-form { margin: 0; }
+.brand{
+	margin-left: 10px;
+}
+
+.form{
+	float: right;
+	
+	
+}
+
+.form-control {
+background-color: rgba(255, 255, 255, 0.63);
+}
+
+
+.panel-default>.panel-heading {
+color: #333;
+background-color: rgba(245, 245, 245, 0.71);
+border-color: rgba(221, 221, 221, 0.09);
+height: 32px;
+}
+
+.panel {
+margin-bottom: 20px;
+width: 700px;
+background-color: rgba(255, 255, 255, 0.56);
+border: 1px solid transparent;
+border-radius: 4px;
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+box-shadow: 0 1px 1px rgba(0,0,0,.05);
+margin-left: 130px;
+}
+
+
+
 /* * Define consistent border, margin, and padding. */
 fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
 /* * 1. Corrects color not being inherited in IE 6/7/8/9.
@@ -175,8 +211,6 @@ a { color: #353535; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-
 a:hover, a:focus { color: #3dc9b3; text-decoration: none; }
 p { color: #8c9398; word-spacing: 1px; line-height: 25px; font-size: 14px; }
 p2 { color: #ffffff; text-shadow: 2px 2px 10px #000000; word-spacing: 1px; line-height: 25px; font-size: 18px; }
-p3 { color: #F6BA33; text-shadow: 2px 2px 10px #000000; word-spacing: 9px; line-height: 25px; font-size: 15px; padding-left: 50px; margin-top: 10px;}
-
 h2 { font-size: 15px; color: #353535; text-transform: uppercase; font-weight: bold; }
 h2::after { content: " "; border: solid 2px #f9be3a; display: block; width: 35px; margin: 25px auto; }
 .section-padding { padding: 90px 0 100px }
@@ -184,7 +218,7 @@ h2::after { content: " "; border: solid 2px #f9be3a; display: block; width: 35px
 .light-bg { background-color: #fff; }
 .dark-box { background: #f3f5f8; -webkit-box-shadow: 0px 3px 0px 0px #f0f2f4; -moz-box-shadow: 0px 3px 0px 0px #f0f2f4; box-shadow: 0px 3px 0px 0px #f0f2f4; }
 .light-box { background-color: #fff; -webkit-box-shadow: 0px 3px 0px 0px #f0f2f4; -moz-box-shadow: 0px 3px 0px 0px #f0f2f4; box-shadow: 0px 3px 0px 0px #f0f2f4; padding: 20px 0; }
-.light-box:hover, .light-box:focus { -webkit-box-shadow: 0px 3px 0px 0px #F9B41D; -moz-box-shadow: 0px 3px 0px 0px #F9B41D; box-shadow: 0px 3px 0px 0px #F9B41D }
+.light-box:hover, .light-box:focus { -webkit-box-shadow: 0px 3px 0px 0px #f9be3a; -moz-box-shadow: 0px 3px 0px 0px #f9be3a; box-shadow: 0px 3px 0px 0px #f9be3a; }
 .box-hover { transition: all 500ms ease-in-out; -webkit-transition: all 500ms ease-in-out; -moz-transition: all 500ms ease-in-out; -o-transition: all 500ms ease-in-out; }
 .box-hover:hover, .box-hover:focus { transform: translate(0, -15px); -webkit-transform: translate(0, -15px); -ms-transform: translate(0, -15px); }
 .wrapper { height: 580px; }
@@ -199,7 +233,7 @@ nav ul li { color: rgba(255, 255, 255, 0.6); display: block; border-bottom: 1px 
 nav ul li:last-child { border: none; }
 nav ul li a { color: rgba(255, 255, 255, 0.6); display: block; padding: 20px; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; padding-left: 0; position: relative; }
 nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: #f9be3a; }
-#nav-toggle { position: absolute; right: 15px; top: -30px; }
+#nav-toggle { position: absolute; right: 15px; top: 0; }
 #nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after { cursor: pointer; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; -o-border-radius: 1px; height: 5px; width: 35px; background: #f9be3a; position: absolute; display: block; content: ''; }
 #nav-toggle span:before { top: -10px; }
@@ -212,14 +246,10 @@ nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: #f9be3a; }
 .navicon { position: relative; height: 26px; }
 .indicator { position: absolute; right: 0 !important; }
 .pull { display: none; }
-#logo{width: 80px; margin-top:-9px; }
 /* ==========================================================================
 Hero
 ========================================================================== */
 .hero { background: url('../img/4.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; }
-.hero2 { background: url('../img/9.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; }
-.hero3 { background: url('../img/possiblea1.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; }
-
 .hero h1 { font-size: 40px; letter-spacing: 12px; margin: 10px; }
 .hero h1 span { color: #a1a9b0; display: inline-block; }
 .hero p { letter-spacing: 1px; }
@@ -247,9 +277,6 @@ iPhone Section
 Swag
 ========================================================================== */
 .swag { background: url('../img/oficina-amarillo-dk.png') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 50px 0; }
-.swag2 { background: url('../img/9.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 50px 0; height: 500px; }
-.swag3 { background: url('../img/possible2.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 50px 0; height: 500px; }
-
 .swag h1 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
 .swag h1 span { display: block; font-size: 25px; margin-top: 20px; }
 .down-arrow-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: #F9BE3A; display: inline-block; margin: 10px auto 20px; color: #fff; font-size: 16px; line-height: 40px; text-align: center; }
@@ -263,7 +290,7 @@ Portfolio
 .effects .img:first-child { margin-left: -15px; }
 .effects .img:last-child { margin-right: 0; }
 .effects .img img { display: block; margin: 0; padding: 0; height: auto; }
-.overlay { display: block; position: absolute; z-index: 20; background: rgba(249, 190, 58, 0.67); overflow: hidden; transition: all 0.5s; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; }
+.overlay { display: block; position: absolute; z-index: 20; background: rgba(100, 194, 158, 0.8); overflow: hidden; transition: all 0.5s; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; }
 a.close-overlay { display: block; position: absolute; top: 0; right: 0; z-index: 100; width: 45px; height: 45px; font-size: 20px; font-weight: 700; color: #fff; line-height: 45px; text-align: center; background-color: #000; cursor: pointer; }
 a.close-overlay.hidden { display: none; }
 a.expand { display: block; position: absolute; z-index: 100; text-align: center; color: #fff; font-weight: 600; font-size: 14px; text-transform: uppercase; line-height: 30px; }
@@ -280,7 +307,7 @@ Subscribe
 .subscribe { background: url('../img/keyboard-bg.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 120px 0 140px; }
 .subscribe h1 { color: #fff; margin-bottom: 40px; }
 .subscribe h1 span { display: block; font-size: 15px; text-transform: uppercase; font-weight: bold; margin-top: 20px; letter-spacing: 1px; }
-.subscribe input[type=text] { background-color: rgba(255, 255, 255, 0.1); border: solid 1px #ffffff; padding: 20px; width: 30%; color: #fff; }
+.subscribe input[type=text] { background-color: rgba(255, 255, 255, 0.1); border: solid 1px #ffffff; padding: 20px; width: 100%; color: #fff; }
 .subscribe input[type=submit] { background: #f9be3a; border: solid 1px #a07d26; padding: 20px; color: #fff; text-transform: uppercase; letter-spacing: 1px; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; }
 .subscribe input[type=submit]:hover { background: #a07d26; border: solid 1px #db9405; color: #fff; }
 /* ==========================================================================

@@ -1,9 +1,8 @@
 <?php
 
-require_once("phpmailer/class.phpmailer.php");
+require("phpmailer/class.phpmailer.php");
+
 $mail = new PHPMailer();
-
-
 $mail->IsSMTP();
 $mail->SMTPAuth = true;
 $mail->Host = "cpanel.possibleapp.com";
@@ -13,8 +12,10 @@ $mail->Password = "hola2014.%";
 
 $mail->SetFrom('contacto@proyect.agency', 'proyect.agency');
 $mail->Subject = "A Transactional Email From Web App";
-$mail->MsgHTML($body);
-$mail->AddAddress($address, $name);
+$mail->MsgHTML($body)= "el mensaje que quieres que vaya en tu mail";
+$mail->AddAddress("contacto@proyect.agency", "proyect");
+$mail->body = "el mensaje que quieres que vaya en tu mail";
+ 
 
 if($mail->Send()) {
   echo "Message sent!";
@@ -57,8 +58,7 @@ $message
 mail($myemail, $subject, $message);
 
 /* Redirect visitor to the thank you page */
-header('Location: gracias.html');
-exit();
+
 
 /* Functions we used */
 function check_input($data, $problem='')

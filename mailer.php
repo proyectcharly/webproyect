@@ -12,7 +12,7 @@ $mail->Password = "hola2014.%";
 
 $mail->SetFrom('contacto@proyect.agency', 'proyect.agency');
 $mail->Subject = "A Transactional Email From Web App";
-$mail->MsgHTML($body);
+
 $mail->AddAddress("contacto@proyect.agency", "proyect");
 $mail->body = "el mensaje que quieres que vaya en tu mail";
  

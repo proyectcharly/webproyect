@@ -9,11 +9,10 @@ $mail->Host = "cpanel.possibleapp.com";
 $mail->Port = 587;
 $mail->Username = "contacto@proyect.agency";
 $mail->Password = "hola2014.%";
-
 $mail->SetFrom('contacto@proyect.agency', 'proyect.agency');
 $mail->Subject = "A Transactional Email From Web App";
-
 $mail->AddAddress("contacto@proyect.agency", "proyect");
+$mail->IsHTML(true);
 $mail->body = "el mensaje que quieres que vaya en tu mail";
  
 

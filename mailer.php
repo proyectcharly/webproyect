@@ -3,6 +3,7 @@
 require("phpmailer/class.phpmailer.php");
 
 $mail = new PHPMailer();
+$mail->SMTPDebug = 4;
 $mail->IsSMTP();
 $mail->SMTPAuth = true;
 $mail->Host = "cpanel.possibleapp.com";
@@ -25,18 +26,18 @@ if($mail->Send()) {
 /* Set e-mail recipient */
 $myemail = "contacto@proyect.agency";
 
-/* Check all form inputs using check_input function */
+/* Check all form inputs using check_input function 
 $name = check_input($_POST['inputName'], "Your Name");
 $email = check_input($_POST['inputEmail'], "Your E-mail Address");
 $subject = check_input($_POST['inputSubject'], "Message Subject");
 $message = check_input($_POST['inputMessage'], "Your Message");
 
-/* If e-mail is not valid show error message */
+/* If e-mail is not valid show error message 
 if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
 {
 show_error("Invalid e-mail address");
 }
-/* Let's prepare the message for the e-mail */
+/* Let's prepare the message for the e-mail 
 
 $subject = "Someone has sent you a message";
 
@@ -53,7 +54,7 @@ $message
 
 ";
 
-/* Send the message using mail() function */
+/* Send the message using mail() function 
 mail($myemail, $subject, $message);
 
 /* Redirect visitor to the thank you page */
